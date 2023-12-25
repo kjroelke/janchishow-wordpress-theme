@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as v;
+
+:root {
+	--color-blue: #{v.$color-blue};
+	--color-blue--light: #{v.$color-blue--light};
+	--color-red: #{v.$color-red};
+	--color-red--light: #{v.$color-red--light};
+	--color-grey: #{v.$color-grey};
+
+	--font-body: #{v.$font-body};
+	--font-headings: #{v.$font-headings};
+
+	--gradient-light: linear-gradient(
+		to right bottom,
+		transparent,
+		rgba(255, 255, 255, 0.15)
+	);
+
+	--gradient-dark: linear-gradient(
+		to right bottom,
+		transparent,
+		rgba(0, 0, 0, 0.15)
+	);
+}
+
+section,
+aside {
+	padding: 6.5rem 0;
+}

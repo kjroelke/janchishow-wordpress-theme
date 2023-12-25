@@ -1,0 +1,33 @@
+@use "../abstracts/mixins" as m;
+
+.hamburger {
+	--size: 6.5rem;
+	padding: 1rem;
+	position: relative;
+	background-color: var(--color-red);
+	border: 2px solid var(--color-red);
+	border-radius: 5px;
+	height: var(--size);
+	width: var(--size);
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		border: 2px solid var(--color-red);
+		background-color: white;
+	}
+
+	&__line {
+		position: relative;
+		border: 2px solid white;
+
+		:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+
+		.hamburger:hover &,
+		.hamburger:focus & {
+			border-color: var(--color-red);
+		}
+	}
+}

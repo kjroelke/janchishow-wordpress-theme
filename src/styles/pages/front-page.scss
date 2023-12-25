@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+section {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.host-image {
+	border-radius: 50%;
+	aspect-ratio: 1;
+	width: 50%;
+}
+
+.card-body {
+	a {
+		--bs-link-color-rgb: 255, 255, 255;
+	}
+}

@@ -1,0 +1,33 @@
+@use "../abstracts/functions" as fn;
+@use "../abstracts/variables" as v;
+
+.btn {
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	transform: translateY(0);
+	text-transform: uppercase;
+	transition: fn.transition(
+		(background-color, border-color, transform, box-shadow, color)
+	);
+
+	&:hover {
+		box-shadow: 2px 4px 8px rgba(black, 0.35);
+		transform: translateY(-2px);
+	}
+
+	a {
+		color: inherit;
+	}
+}
+.btn-white {
+	background-color: white;
+	color: var(--bs-primary);
+
+	&:hover,
+	&:focus {
+		border-color: white;
+		background-color: transparent;
+		color: white;
+	}
+}
