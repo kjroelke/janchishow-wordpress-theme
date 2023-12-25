@@ -16,6 +16,7 @@
   "author": "K.J. Roelke",
   "license": "ISC",
   "dependencies": {
+    "@fontsource/barlow-condensed": "^5.0.8",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",

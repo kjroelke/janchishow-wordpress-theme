@@ -28,6 +28,8 @@ module.exports = {
 				global: `.${ THEME_DIR }/src/index.js`,
 				'vendors/fontawesome': `.${ THEME_DIR }/src/js/vendors/fontawesome.js`,
 				'vendors/bootstrap': `.${ THEME_DIR }/src/js/vendors/bootstrap.js`,
+				'vendors/fonts': `.${ THEME_DIR }/src/styles/vendors/fonts.scss`,
+				'pages/search': `.${ THEME_DIR }/src/js/search/app.tsx`,
 				...addEntries( appNames, 'pages' ),
 				...addEntries( styleSheets, 'styles' ),
 			};
