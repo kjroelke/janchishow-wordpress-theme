@@ -67,8 +67,8 @@ class TJS_Theme_Init {
 		$global_scripts = new Asset_Loader( 'global', Enqueue_Type::both, null, array( 'bootstrap' ) );
 		wp_localize_script( 'global', 'tjsSiteData', array( 'rootUrl' => home_url() ) );
 
-		$search = require_once get_template_directory() . '/dist/search.asset.php';
-		wp_register_script( 'search', get_template_directory_uri() . '/dist/search.js', array_merge( array( 'global' ), $search['dependencies'] ), $search['version'], array( 'strategy' => 'defer' ) );
+		$search = require_once get_template_directory() . '/dist/pages/search.asset.php';
+		wp_register_script( 'search', get_template_directory_uri() . '/dist/pages/search.js', array_merge( array( 'global' ), $search['dependencies'] ), $search['version'], array( 'strategy' => 'defer' ) );
 
 		// style.css
 		wp_enqueue_style(

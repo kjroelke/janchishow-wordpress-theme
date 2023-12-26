@@ -13,8 +13,15 @@ $secondary: v.$color-grey;
 */
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: v.$font-body;
-$font-family-monospace: Monaspace Neon, SFMono-Regular, Menlo, Monaco, Consolas,
-	"Liberation Mono", "Courier New", monospace;
+$font-family-monospace:
+	Monaspace Neon,
+	SFMono-Regular,
+	Menlo,
+	Monaco,
+	Consolas,
+	"Liberation Mono",
+	"Courier New",
+	monospace;
 
 $font-size-root: 62.5%; // Assuming browser is set to 16px, this will make 1rem = 10px
 $font-size-base: 1.6rem; // Sets the base font size to 16px
@@ -85,8 +92,8 @@ $utilities-colors: (
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
-// @import "bootstrap/scss/placeholders";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/placeholders";
 
 // Helpers
 @import "bootstrap/scss/helpers";

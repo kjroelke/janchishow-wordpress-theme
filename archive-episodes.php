@@ -14,6 +14,7 @@ get_header();
 	<?php echo "<p>No {$post->post_type}s found!</p>"; ?>
 </div>
 <?php else : ?>
+	<?php wp_enqueue_script( 'search' ); ?>
 <div id="app"></div>
 <noscript>
 	<header style="background-color: var(--color-blue);" class="text-white">
